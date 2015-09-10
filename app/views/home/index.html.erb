@@ -1,0 +1,103 @@
+
+<div class="jumbotron home-jumbotron">
+	<h1 class="animated fadeInDown jumbotron-text col-md-8"> Shri Guru Ravidass Saba, Bay Area.</h1>
+	<p class="jumbotron-text col-md-8">Keep up with the community on a more modern scale.</p>
+
+	<% if @current_user %> 
+           <span class="nav"><%= link_to "Hi  " + @current_user.first_name.capitalize + "!", '/profile' %>  
+           <%= link_to "Log out", logout_path %></span>
+             <% else %>
+                 <button role="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#signupModal">
+		      	Signup
+		      	</button>
+		      	<button role="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#loginModal">
+		      	Login
+		      	</button>
+            <% end %> 
+
+            <%= render 'users/login' %>
+			<%= render 'users/new' %>
+	</div>
+
+
+<div class="container">
+  	<div class="row">
+  		<div class="col-md-12">
+  		<h1>Our Community & Our Mission</h1><br>
+  		PBR before they sold out banh mi, trust fund Truffaut umami farm-to-table scenester seitan viral. High Life disrupt put a bird on it, heirloom keytar biodiesel gentrify. Pork belly narwhal distillery health goth semiotics, wayfarers cardigan Bushwick quinoa. Keytar Shoreditch wayfarers butcher roof party. Cardigan Kickstarter fingerstache irony, leggings YOLO iPhone. Bitters post-ironic mlkshk, 90's pop-up skateboard fingerstache Godard tote bag stumptown chia viral listicle. Actually jean shorts sartorial put a bird on it, cronut tattooed sriracha Brooklyn XOXO Banksy.
+<br>
+Cold-pressed Portland drinking vinegar wayfarers tilde locavore. Marfa irony cold-pressed flannel gluten-free. Semiotics whatever Intelligentsia normcore Bushwick, Godard polaroid swag Pitchfork mlkshk Banksy aesthetic. Bespoke 8-bit craft beer, keffiyeh heirloom pour-over distillery meditation hashtag semiotics forage normcore. Art party meh church-key butcher polaroid distillery. Narwhal migas dreamcatcher, Williamsburg asymmetrical bicycle rights Truffaut heirloom. Sustainable keffiyeh irony slow-carb distillery.
+<br>
+PBR before they sold out banh mi, trust fund Truffaut umami farm-to-table scenester seitan viral. High Life disrupt put a bird on it, heirloom keytar biodiesel gentrify. Pork belly narwhal distillery health goth semiotics, wayfarers cardigan Bushwick quinoa. Keytar Shoreditch wayfarers butcher roof party. Cardigan Kickstarter fingerstache irony, leggings YOLO iPhone. Bitters post-ironic mlkshk, 90's pop-up skateboard fingerstache Godard tote bag stumptown chia viral listicle. Actually jean shorts sartorial put a bird on it, cronut tattooed sriracha Brooklyn XOXO Banksy.
+  		</div>
+  	</div>
+<br>
+
+
+<!-- Pill tabs -->
+<div class="container">
+  <h3></h3>
+  <ul class="list-inline">
+    <li><a href="#">Home</a></li>
+    <li><a href="#thumbnailpill">Content</a></li>
+    <li><a href="#"></a></li>
+    <li><a href="#">Visit Us</a></li>
+  </ul>
+</div>
+
+<!-- start of thumbnail columns -->
+<!-- col 1 -->
+  	<div class="row">
+<!-- buttons -->
+<!-- <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p> -->
+
+		<div class="col-sm-4">
+		    <div>
+		      <img class="thumbnail" src="http://www.religiousforums.com/proxy/vHlztQVSCheqOC4F%2F4i1%2BxfccrOt%2F%2BNi5Lk9HEsFRucedmM51RrUTPAkpcUzKvB5gaZRp%2BODYIK7N1rV45k%3D/image.png" alt="...">
+		      <div class="caption">
+		        <h3>Coming Soon...</h3>
+		        <p>Construction at the temple property had began during the Summer of 2015. With donations made by the Sangat(the community members) we have been holding events to continue raising funds for monthly services. By the end of Summer of 2016, the temple for the Bay Area Shri Guru Ravidass community will be completed and ready for daily prayers.</p>
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="col-sm-4">
+		    <div>
+		      <img class="thumbnail" src="http://www.2-10.com/wp-content/uploads/2015/03/Getting-Involved-Community.png" alt="...">
+		       	<div class="caption">
+		       	 <h3>Get Involved</h3>
+		       	 <p>“satgur kee sayvaa safal hai jay ko  karay chit laa-ay”<br><br>
+					Fruitful is service to the True Guru, if one does so with a sincere mind.</p><br>
+					No matter what your age is, whether you are male or female, you can get involved and make a difference. Together we can work on making our Gurdwara, our community and our country a better place. Please fill out following form to let us know what areas you are interested in based on your skills and/or interests.
+		     	 </div>
+		    </div>
+		</div>
+			  
+
+		<div class="col-sm-4">
+		    <div>
+		      <img class="thumbnail" src="http://www.hindustantimes.com/Images/popup/2014/11/Guruparv8_compressed.jpg" alt="...">
+		      <div class="caption">
+		        <h3>Visiting Gurdwara</h3>
+				Before entering the hall, people take off their shoes, wash their hands, covers their head and think of the Guru. Non-Sikhs too must cover their head with a scarf. Upon entering the hall, where Guru Granth Sahib is kept, they walk slowly, bow humbly and touch their forehead to the ground, out of respect and love for the Guru. As people bow, and place their offering respectfully before the Guru, it may be money, flowers, or words of thanks. Any sincere expression of gratitude is equally acceptable to the Guru. After bowing and offering, one should sit down in the Sangat (community) quietly without disturbing others. Usually men sit on one side and women on the other, in a cross-legged position.</p>
+		      </div>
+		    </div>
+		</div>
+<!-- map -->
+<div class="container">
+  	<div class="row">
+  		<div class="col-md-12">
+  		<h1>Find Us At:</h1>
+  		<br>
+  		<br>
+  		<p><iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/julfi.ndcble58/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoianVsZmkiLCJhIjoiNzVjZTUxZmJmMTMwNTIwMTUwYWUzYWMwZmY2NjVhMzcifQ.iYluRvwwQChus9Ublk3lcg'></iframe></p>
+  		</div>
+  	</div>
+<br>
+<br>
+		  
+	  	<!-- <div class="col-sm-4">
+	  		whats up Temple Peeps!
+	  	</div> -->
+</div>
+

@@ -1,0 +1,30 @@
+.home-jumbotron {
+
+    background-image: url(http://feelgrafix.com/data_images/out/10/833120-india.jpg);
+    background-position: center top;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.jumbotron-text, h1.jumbotron-text {
+
+	color: white;
+	position: center;
+
+}
+
+.thumbnail {
+
+	width: 100%;
+	max-height: 250px;
+	background-size: 100% 100%;
+
+}
+
+.loginmodal, .signupmodal {
+
+	position: center;
+
+}

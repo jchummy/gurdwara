@@ -1,0 +1,26 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+			<h1 >New Post</h1>
+			<%= form_for @post do |f| %>
+			<div class="panel panel-default">
+			  <div class="panel-heading">
+			    <h3 class="panel-title"><%= f.text_field :title, placeholder: "title" %></h3>
+			  </div>
+			  <div class="panel-body">
+			  	<%= f.text_field :author, placeholder: "author" %><br>
+			    <%= f.text_field :body, placeholder: "body" %>
+			  </div>
+			</div>
+
+
+<%= render 'form' %>
+</div>
+
+
+  		<hr>
+  		<%= f.submit "Save Post" %>
+		</div>
+	</div>
+</div>
+<% end %>
