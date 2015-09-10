@@ -1,20 +1,20 @@
-<br>
+
 Shri Guru Ravidass, Bay Area is the name of the temple that this is app for. Construction has began, and will be ready for service by this time next summer. Members, old and new, will be able to use this app to get the gist of what the temples goal is and when and where to find events.<br>
-<br>
+
 This app was created using:
-<br>
+
 Ruby on Rails
 jQuery
 Bootstrap
-<br>
+
 To use this app:
-<br>
+
 Clone this repo
 Bundle install
 Start server with Rails s
-<br>
+
 Links:
-<br>
+
 Github: https://github.com/jchummy/gurdwara
 Heroku: 
 
