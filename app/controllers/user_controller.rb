@@ -1,3 +1,4 @@
+# CJ: rename file to `users_controller.rb` (plural)
 class UsersController < ApplicationController
   
   # form to create new user
@@ -15,7 +16,7 @@ class UsersController < ApplicationController
     if current_user
       redirect_to profile_path
     else
-    user = User.new(user_params)
+      user = User.new(user_params)
       if user.save
         session[:user_id] = user.id
         redirect_to '/profile'
@@ -27,6 +28,8 @@ class UsersController < ApplicationController
 
   # show current user 
   def show
+    # CJ: you shouldn't need this since you have the helper method
+    # `current_user` defined in `application_controller`
   	@current_user = User.find(session[:user_id])
   	render :show
   end
@@ -36,8 +39,8 @@ class UsersController < ApplicationController
   end
   
   private
-  def user_params
-  	params.require(:user).permit(:first_name, :last_name, :email, :password)
-  end
+    def user_params
+    	params.require(:user).permit(:first_name, :last_name, :email, :password)
+    end
 
 end

@@ -1,16 +1,16 @@
 Rails.application.routes.draw do
   
-#user routes
-get '/signup', to: 'users#new'
-get '/profile', to: 'users#show'
-resources :users, only: [:create]
+  #user routes
+  get '/signup', to: 'users#new'
+  get '/profile', to: 'users#show'
+  resources :users, only: [:create]
 
-#session routes
-get "/login", to: "sessions#new"
-get "/logout", to: "sessions#destroy"
-post "/sessions", to: "sessions#create"
+  #session routes
+  get "/login", to: "sessions#new"
+  get "/logout", to: "sessions#destroy"
+  post "/sessions", to: "sessions#create"
 
-root 'home#index'
+  root 'home#index'
 end
 
 
